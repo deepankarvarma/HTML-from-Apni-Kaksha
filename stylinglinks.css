@@ -1,0 +1,25 @@
+nav a {
+  text-decoration: none;
+  color: rgb(255, 94, 0);
+  padding: 10px;
+  text-align: center;
+  float: right;
+
+  /*float:right; will remove elements from the box model in a specific direction and as 
+    a result overflow will be there , to solve this write overflow:hidden in nav tag
+   /* 
+    background-color: rgb(255, 0, 0);We know that anchor tag is an inline element
+     and hence different links will be visible 
+    with breaks in the background tag if we use this command.
+    To eradicate this we need to set background color in the nav tag */
+}
+nav {
+  background-color: rgb(51, 255, 0);
+  overflow: hidden;
+}
+a:hover{
+    color: darkcyan;
+}
+a:visited{
+    color: black;
+}

@@ -1,0 +1,75 @@
+<!--Now lets make a payment form.It has 2 important attributes,method(get,post) and action(url where we want to send the data)
+  Elements in form:-
+  Type,Name,Value
+  Different Input types as text,password,radio,email,checkbox,file,submit(button),reset(button),image
+  Name variable will be sent to server
+  
+  Next we have textarea,select box(select)-->
+  <!DOCTYPE html>
+  <html lang="en" >
+  <head>
+      <title>Payment Form | Project </title>
+      <link rel="stylesheet" href="StylingForms.css">
+  </head>
+  <body >
+      <form action="" class="container">
+          <!--The default method is get , in this method the information is encoded in the URL
+        To hide this we will use post method-->
+          <h1 class="main_head">Payment Form</h1>
+          <hr>
+          <h2>Contact Information </h2>
+          <p>Name:* 
+              <br><input type="text" name="Name" required placeholder="Enter Your Name"></p>
+          <!-- placeholder basically sets default text which automatically gets deleted once we 
+        start entering the data -->
+          <p><fieldset>
+              <legend>Gender:</legend>
+              Male<input type="radio" name="Gender" id="">
+              Female<input type="radio" name="Gender" id="">
+              
+              <!--
+                Both male and female should have same imput name as they are a part of radio button
+              --></fieldset>
+              </p>
+            
+            <p>
+                Address: <br>
+                <textarea name="Address" id="" cols="100" rows="5" placeholder="Your Address Here"></textarea>
+            </p>
+            <p>    
+                Email*: <br>
+                <input type="email" name="email " id="" required placeholder="Email Please">
+            </p>
+            <p>
+                Pincode:<br> <input type="number" name="pincode" id="" placeholder="Your pincode here">
+            </p>
+            <hr>
+            <h2>Payment Information</h2>
+            <p>Card Type:<br>
+                <select name="card_type" id="">
+                    <option value="--">--Select A Card Type--</option>
+                    <option value="VISA">VISA</option>
+                    <option value="MASTERCARD">MASTERCARD</option>
+                    <option value="RuPay">RuPay</option>
+                </select>
+            </p>
+            <p>
+                Card Number:*<br>
+                <input type="number" name="card_number" required id="" placeholder="Card Number">
+            </p>
+            <p>
+                Expiration Date:* <br>
+                <input type="date" name="exp_date" required id="">
+            </p>
+            <p>
+                CVV:*<br>
+                <input type="password" name="CVV" id="" required placeholder="CVV"><br>
+            </p>
+            
+            <p>
+                <input type="submit" value="Pay Now">
+             
+            </p>
+      </form>
+  </body>
+  </html>

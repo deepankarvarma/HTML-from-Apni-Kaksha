@@ -1,0 +1,45 @@
+/*
+First of all color properties:-
+    color;
+    background color;
+    border-color;
+    Values:-
+    Name
+    RGB(To define color name which are not even listed)
+    This application is demonstrated in ColorinCSS.html
+Now come to background:-
+    background color: red;
+    background-image: url("image.jpg");
+    background-repeat: repeat-x; to repeat the image in x axis
+    background-repeat: repeat-y; to repeat the image in y axis
+    background-repeat:no-repeat; not repeat
+    background-position:top;  
+    background-position:left;
+    background-position:bottom 50px right 100px; 
+    This application is demonstrated in BackgroundCSS.html
+Next Comes Fonts:-   
+    font-family:value;
+    Different font families are:-
+    serif,sans-serif,monospace,cursive
+    font-style:normal/italic/oblique/oblique 40deg;
+    font-size:80%/12px/1.2em
+    font-weight:bold/bolder/lighter/any value b/w 100 to 900(400 is normal,700 is bold; 
+    This application is demonstrated in FontsinCSS.html
+Formatting Text:-
+While em is relative to the font-size of its direct or nearest parent, rem is only relative to the html (root) font-size.
+    text-align:left/center/right/justify(will stretch all the lines to both left and right) ;
+    text-decoration:overline/underline/line-through/underline overline ;
+    text-transform:capitalize(will make the first letter of each word capital)/uppercase/lowecase/none/full-width;
+    text-indent:0/30%,-3em ;
+    line-height: ;
+    letter-spacing:normal/0.2rem/1px/-1px ;
+    word-spacing:normal/0.2rem/1px/120%,-.4ch ;
+    This application is demonstrated in FontFormatinCSS.html
+The Last thing is shorthand property 
+this means that instead of writing background color and image or any ither in differnet tags we can
+write all these in the same tag like this
+    background: #000 url("image.jpg") no-repeat left top
+    same applies for  border,font,margin tags 
+    in case of any difficulty google the tag name and add shorthand for ex font shorthand
+*/
+

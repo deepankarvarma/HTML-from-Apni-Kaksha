@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Background in CSS</title>
+  </head>
+  <style>
+    h1 {
+      color: blueviolet;
+      /* background-color: chocolate; */
+    }
+    .background {
+      background-image: url(backgroundimage.jpg);
+      background-repeat: no-repeat;
+      background-size: 600px;
+      background-position:center ;
+      background-attachment: scroll;
+      /* now this defines whether the image will scroll down with the text or not
+              fixed means that the image will remain in its position
+              scroll means that image will scroll along with the content*/
+      height: 1000px;
+      width: 1500px;
+      /* here we will use background size attribute to enlarge or compress the full image
+             .The purpose of height and width attribute is that to show the portion of the image
+             if the given size is more than required then full image will be displayed
+             and if the size in pixels is less than that of original image full image will 
+             not be displayed */
+      /* but as the hieght and width is  more than required there will be multiple 
+             images so as to reduce this we will use no repeat */
+      /* initially there is no height and width so the image will not be visible: .
+             The size 100*100 will not be visible because that will cover the content of 
+             h1 tag,solution is to increase the size */
+    }
+  </style>
+  <body>
+    <div class="background">
+      <h1>This is a heading</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi similique
+        laboriosam tempore quaerat corporis dicta perspiciatis veritatis, amet
+        commodi ipsum ab, corrupti possimus! Magni, nesciunt quidem quibusdam ab
+        vitae maxime!
+        <br>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi similique
+        laboriosam tempore quaerat corporis dicta perspiciatis veritatis, amet
+        commodi ipsum ab, corrupti possimus! Magni, nesciunt quidem quibusdam ab
+        vitae maxime!
+      </p>
+    </div>
+    <!-- <p>lorem100</p> you can type this to get random paragraph of 100 words-->
+    
+  </body>
+</html>

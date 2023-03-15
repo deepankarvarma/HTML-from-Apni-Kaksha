@@ -1,0 +1,14 @@
+table,tr,td,th{
+    border: 1px solid crimson;
+    border-collapse: collapse;
+    /* Now this will kill the gap between the borders of two different cells */
+    padding: 10px;
+    /* border-spacing: 40px;
+    Now this wont have any effect as there is no space b/w the border as the border is collapsed */
+}
+th{
+    background-color: coral;
+}
+td{
+    background-color: cornflowerblue;
+}

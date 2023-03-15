@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading,Specificity,Inheritance,Overflow</title>
+    <style>
+        .box{
+            font-size: 30px;
+            border: 3px solid red;
+            overflow: visible;
+            height: 90px;
+            width: 300px;
+            /*overflow can be seen in this case*/
+        }
+    </style>
+</head>
+<body>
+    <p>Cascade:- Lets assume that we have used a selector multiple times like this:- <br>
+    h1{<br>color:blue;<br>}<br>
+    h1{<br>color:red;<br>}<br>
+    Cascade means that the value of h1 will be overwritten red from blue and the final color 
+    will be red.
+    <br>
+    Next we have <b>Specificity</b>
+    <br>
+    After going through Specificity,Inheritance and Importance we have Overflow
+    <br>
+    
+    <div class="box">This box has a height and width.This means that if there is too much
+        content to be displayed within the assigned height, there will be an overflow situation.
+        If overflow is set to hidden then any overflow will not be visible. <br><br>
+        This content is outside the box.Different values of overflow are <br>
+        <b>hidden(will hide the excess data),visible,
+        scroll(a scroll bar will be available for scrolling the excess text)</b>
+        But there is a catch that even when the height and width is beyond the required ones 
+        and the overflow is scroll a scroll bar will be visible, so as to rectify this error
+        use overflow:auto;       
+    </div>
+    </p>
+</body>
+</html>

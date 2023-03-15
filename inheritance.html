@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+    <style>
+        .class1 a{
+            color: inherit;
+            /* This will basically inherit the value of the parent tag and will give
+             output color as black(in our case) which is the color of body tag */
+        }
+        .class2 a{
+            color: initial;
+            /* This will give output as black which is the default color in the browser
+            and thsi default value differs from browser to browser */
+        }
+        .class3 a{
+            color: unset;
+            /* This will give the color as blue because if we refer CSS color property (GeeksFGeeks)
+            we will see that inherited is yes for color tag, so the value of unset will be same
+            as inherited which is black in our case*/
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Default <a href="">Link</a> color</li>
+        <li class="class1">Inherited <a href="">Link</a> color</li>
+        <li class="class2">Initial <a href="">Link</a> color</li>
+        <li class="class3">Unset <a href="">Link</a> color</li>
+    </ul>
+</body>
+</html>

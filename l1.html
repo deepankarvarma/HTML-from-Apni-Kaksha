@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <link rel="stylesheet" href="stylingtables.css"> -->
+    <title>Document</title>
+  </head>
+  <body>
+      <h1>Lecture 1 &lt;</h1> 
+      <!--To display left angular brackets-->
+      <h2>Lecture 1</h2>
+      <h3>Lecture 1</h3>
+      <h4>Lecture 1</h4>
+      <h5>Lecture 1</h5>
+      <h6>Lecture 1</h6>
+      <p>
+        <b>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</b> 
+        <i>Aliquid, dolores ipsam.</i> 
+        <small>beatae repudiandae velit quae voluptatum vel reiciendis perferendis optio </small> numquam, 10<sup>2</sup>,log <sub>2</sub><br> quod ipsam doloremque nam, illo, nesciunt architecto harum.
+        <!--We can use strong also instead of b, and em instead of i -->
+      </p>
+      <hr>
+      <h2>Shopping List</h2>
+      <ol type="i">
+          <li>Milk</li>
+          <li>Butter</li>
+          <li>Egg</li>
+          <li>Bread</li>
+      </ol>
+      <ul style="list-style: square;">
+        <li>Milk</li>
+        <li>Butter</li>
+        <li>Egg</li>
+        <li>Bread</li>
+    </ul>
+    <hr>
+    <a href="https://www.google.com" target="_blank">Google</a> 
+    <!--
+      Target blank means it will open in new tab
+    -->
+    <a href="l2.html">Page2</a>
+    <!--As the file is in same folder as the current file we have just typed the name
+    otherwise we have used "/Folder/file" to move into another folder,
+   or ../filename is the file is outside the current folder -->
+   <a href="../../8D Songs/thumbnail/8 parche.jpg" target="_blank">Pic</a>
+   <!--
+     The current folder was HTML inside VS Code Projects so we have moved 2 folders up and there folder
+     was 8D somgs
+   -->
+   <br>
+   <center><img src="../../8D Songs/Pop-Music-Your-EDM1.jpg" alt="Pop-Music-Your-EDM1"  >
+   <hr>
+   <video src="../../8D Songs/2021-04-09 22-42-19.mp4" width="560" controls></video>
+   <!--
+     controls is used to display play/pause button etc., we can also use autoplay,loop,muted keyword
+     and poster to display a thumbnail.Now we will use iframe tag to embed websites
+   -->
+   <br>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/nZ1rTugGIkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <br>
+   <iframe src="https://satwikdpshrit.wixsite.com/deepankar-2" frameborder="0" height="600" width="1600"></iframe>
+   <br>
+   <table border="5">
+     <thead>
+       <tr>
+         <th>Name</th>
+         <th>Roll No.</th>
+         <th>Marks</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td>Khushi</td>
+         <td>51</td>
+         <td>920</td>
+       </tr>
+       <tr>
+        <td>Tarush</td>
+        <td>63</td>
+        <td>900</td>
+      </tr>
+      <tr>
+        <td>Hemant</td>
+        <td>09</td>
+        <td>970</td>
+      </tr>
+     </tbody>
+     <tfoot>
+       <tr>
+         <th colspan="2">Total</th>
+         <th>3750</th>
+       </tr>
+     </tfoot>
+  </table>
+     <!--
+       Horizontal Row,Vertical Column
+       tr-table row
+       td-table data
+       th-table heading
+       thead-another way og righting table heading 
+       tfoot-footer
+       th has attributes named rowspan colspan
+        rowspan-merging rows
+        colspan- merging column
+     -->
+   
+  </center>
+  
+  </body>
+</html>

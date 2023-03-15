@@ -1,0 +1,15 @@
+.favourite{
+    color: red;
+    font-weight: bold;
+}
+ul#summer-drinks li{
+    color: black;
+    font-weight: normal;
+}
+/* When you will hover on the selector you will see Selector Specificity
+The selector with higher specificity will be followed
+In this case ul#summer-drinks li will have higher specificity than .favourite
+so to give .favourite more specificity add ul#summer-drinks li.favourite 
+
+In case specificity of both the tags is same i.e. both the tags are same then the 
+selector written latter will be followed this is better explained in l4.html*/

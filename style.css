@@ -1,0 +1,47 @@
+p,a{
+    color: green;
+}
+a[href="http://facebook.com"]{
+    color: springgreen;
+}
+li{
+     list-style-type: square ;
+}
+.special{
+    color: orange;
+    font-weight: bold;
+}
+em.special,li.special{
+    color: rgb(47, 236, 62);
+}
+li>em{
+    color: royalblue;
+}
+h1+p{
+    font-size: 145%;
+}
+a:hover{
+    color: saddlebrown;
+    text-decoration: overline;
+    /*TEXT_DECORATION means underlining/overlining*/
+}
+body h1+p .special{
+    color: yellow;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    /*padding means how thick the background color should be*/
+}
+#heading{
+    color: chartreuse;
+}
+p#one{
+    color: coral;
+}
+li[class~="att"]
+{
+    list-style-type: disc;
+}
+/*We can select a specific class by adding [class="a"] (class name a)
+we can also select all the elements which have class a and any other class also by [class~="a"]
+for example there is element having class a and b 
+*/

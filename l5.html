@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow in Images</title>
+    <style>
+        .images{
+            border: 2px solid red;
+            height: 100px;
+            width: 100px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            /* Height and width 100% will inherit the values from its parent tag i.e. div  */
+            object-fit: contain;
+            /* try different fits for images */
+        }
+    </style>
+  </head>
+  <body>
+    <p>
+      In this lecture we will se how to solve the problem of overflow in Images
+      <br />
+      <div class="images">
+        <img src="clipart4573945.png" alt="star"></div>
+        <br>
+        <div class="images"> <img src="balloon.jpg" alt="balloon"></div>
+      
+    </p>
+  </body>
+</html>
